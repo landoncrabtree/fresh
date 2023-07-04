@@ -8,7 +8,7 @@ iwr -useb 'https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Wi
 
 ## [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
 Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates 
-```
+```pwsh
 iwr -useb https://christitus.com/win | iex
 ```
 ![image](https://github.com/landoncrabtree/fresh/assets/34496757/c40adcfc-d7da-4714-9f69-ca0de41b1c5b)
@@ -17,3 +17,9 @@ iwr -useb https://christitus.com/win | iex
 
 ## [abbodi1406/vcredist](https://github.com/abbodi1406/vcredist)
 Install Visual C++ redistrubatables runtimes for compatability against a wide-array of applications.
+
+## reverse.ps1
+This script reverses the scroll direction to behave like macOS' natural scroll.
+```pwsh
+iwr -useb 'https://raw.githubusercontent.com/landoncrabtree/fresh/main/Windows/reverse.ps1' | iex
+```
