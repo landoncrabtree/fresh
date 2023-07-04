@@ -56,9 +56,10 @@ brew install --cask bitwarden
 brew install --cask authy
 brew install --cask private-internet-access
 brew install --cask docker
-brew install --cask intellij-idea
-brew install --cask pycharm
-brew install --cask clion
+brew install --cask jetbrains-toolbox
+#brew install --cask intellij-idea
+#brew install --cask pycharm
+#brew install --cask clion
 brew install --cask discord
 brew install --cask macupdater
 brew install --cask the-unarchiver
