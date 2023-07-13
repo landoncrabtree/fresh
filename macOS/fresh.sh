@@ -74,7 +74,7 @@ brew install --cask microsoft-powerpoint
 brew install --cask microsoft-teams
 brew install --cask microsoft-word
 brew install --cask microsoft-excel
-brew install --cask oracle-jdk
+brew install --cask zulu
 brew install --cask vlc
 brew install --cask hiddenbar
 brew install --cask mac2imgur
@@ -86,6 +86,7 @@ brew install --cask onedrive
 brew install --cask gyazo
 brew install --cask flux
 brew install --cask keyboard-maestro
+brew install --cask zoom
 
 # Setup 'code' command for VSCode
 cat << EOF >> ~/.zprofile
