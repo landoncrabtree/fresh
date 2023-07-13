@@ -44,6 +44,9 @@ read $wait
 # Enable plugins
 sed -i '' 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)/' ~/.zshrc
 
+# Add aliases
+echo "[[ -f ~/.aliases ]] && source ~/.aliases" >> ~/.zshrc
+
 # Install some security-tools
 brew install binutils
 brew install nmap
@@ -52,6 +55,7 @@ brew install --cask wireshark
 brew install feroxbuster
 brew install rustscan
 brew install binwalk
+brew install --cask ghidra
 
 # Install regularly used applications
 brew install --cask rectangle
