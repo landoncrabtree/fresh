@@ -94,6 +94,9 @@ brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
 
+# Setup 'ghidra' alias
+echo 'alias ghidra="ghidraRun"' >> ~/.aliases
+
 # Setup 'code' command for VSCode
 cat << EOF >> ~/.zprofile
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
