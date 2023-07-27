@@ -19,6 +19,9 @@ brew install nvm
 brew install cairo
 brew install pango
 
+# misc
+brew install mysql-client
+
 # Install OhMyZsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -58,6 +61,8 @@ brew install rustscan
 brew install binwalk
 brew install --cask ghidra
 brew install exiftool
+brew install hashcat
+brew install john-jumbo
 
 # Install regularly used applications
 brew install --cask rectangle
@@ -97,10 +102,14 @@ brew install --cask zoom
 # Setup 'ghidra' alias
 echo 'alias ghidra="ghidraRun"' >> ~/.aliases
 
+# Setup john jumbo
+echo 'export PATH="$PATH:/opt/homebrew/Cellar/john-jumbo/1.9.0_1/share/john"' >> ~/.zprofile
+
 # Setup 'code' command for VSCode
-cat << EOF >> ~/.zprofile
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
+echo 'export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >> ~/.zprofile
+
+# Setup MySQL client
+echo 'export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
 
 # Install other development languages
 brew install go
