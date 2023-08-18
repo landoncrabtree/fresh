@@ -18,6 +18,9 @@ iwr -useb https://christitus.com/win | iex
 ## [abbodi1406/vcredist](https://github.com/abbodi1406/vcredist)
 Install Visual C++ redistrubatables runtimes for compatability against a wide-array of applications.
 
+## [chase/redist-installer](https://git.chse.dev/chase/redist-installer)
+Installs common Redist programs for Windows
+
 ## reverse.ps1
 This script reverses the scroll direction to behave like macOS' natural scroll.
 ```pwsh
