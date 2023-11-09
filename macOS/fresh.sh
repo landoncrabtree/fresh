@@ -99,18 +99,11 @@ brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
 
-# Setup 'ghidra' alias
-echo 'alias ghidra="ghidraRun"' >> ~/.aliases
-echo 'alias lazy_nmap="sudo nmap --min-rate 4500 --max-rtt-timeout 1500ms"' >> ~/.aliases
+# .aliases
+wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.aliases -O ->> ~/.aliases
 
-# Setup john jumbo
-echo 'export PATH="$PATH:/opt/homebrew/Cellar/john-jumbo/1.9.0_1/share/john"' >> ~/.zprofile
-
-# Setup 'code' command for VSCode
-echo 'export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >> ~/.zprofile
-
-# Setup MySQL client
-echo 'export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"' >> ~/.zprofile
+# .zprofile
+wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.zprofile -O ->> ~/.zprofile
 
 # Install other development languages
 brew install go
