@@ -1,0 +1,2 @@
+echo 'alias ghidra="ghidraRun"' >> ~/.aliases
+echo 'alias lazy_nmap="sudo nmap --min-rate 4500 --max-rtt-timeout 1500ms"' >> ~/.aliases
