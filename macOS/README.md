@@ -1,4 +1,4 @@
-# macOS
+# macOS (Sonoma 14.0)
 
 ## fresh.sh
 This script install all necessary tools that I regularly use, including development runtimes (Python, Node, etc), applications (Discord, Bitwarden, etc), shell themes/plugins, and application autoupdates.
