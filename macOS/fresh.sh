@@ -98,6 +98,7 @@ brew install --cask gyazo
 brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
+brew install bat
 
 # .aliases
 wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.aliases -O ->> ~/.aliases
