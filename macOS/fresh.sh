@@ -118,4 +118,9 @@ brew tap homebrew/autoupdate
 sudo chown $(whoami):staff ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 brew autoupdate --start --upgrade --greedy --cleanup
 
+# macOS Tweaks
+
+# Open TextEdit in plaintext mode by default
+defaults write com.apple.TextEdit RichText -int 0
+
 echo "DONE! Enjoy."
