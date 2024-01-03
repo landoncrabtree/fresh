@@ -63,6 +63,7 @@ brew install --cask ghidra
 brew install exiftool
 brew install hashcat
 brew install john-jumbo
+brew install bat
 
 # Install regularly used applications
 brew install --cask rectangle
@@ -79,6 +80,8 @@ brew install --cask jetbrains-toolbox
 #brew install --cask clion
 brew install --cask discord
 brew install --cask macupdater
+brew install --cask omnidisksweeper
+brew install --cask obsidian
 brew install --cask the-unarchiver
 brew install --cask microsoft-outlook
 brew install --cask microsoft-powerpoint
@@ -98,7 +101,6 @@ brew install --cask gyazo
 brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
-brew install bat
 
 # .aliases
 wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.aliases -O ->> ~/.aliases
