@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Perform updates
 sudo apt update -y
 
