@@ -12,7 +12,7 @@ mkdir sxhkd
 mkdir autostart
 cp /usr/share/doc/bspwm/examples/bspwmrc bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc sxhkd/
-wget https://raw.githubusercontent.com/yshui/picom/next/picom.sample.conf -O picom/picom.conf
+wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/Kali/picom.conf -O picom/picom.conf
 chmod +x bspwm/bspwmrc
 xfconf-query -c xfwm4 -p /general/use_compositing -s false
 
