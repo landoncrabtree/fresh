@@ -5,3 +5,7 @@ An install script for popular tools, PimpMyKali, and other fixes/features for Ka
 
 ## fresh.sh (run this AFTER PMK)
 This script configures bspwm and XFCE4.
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/landoncrabtree/fresh/main/Kali/fresh.sh)
+```
