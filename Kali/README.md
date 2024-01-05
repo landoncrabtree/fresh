@@ -1,7 +1,7 @@
 # Kali Linux
 
+## [TheEssentials](https://github.com/blindpentester/the-essentials)
+An install script for popular tools, PimpMyKali, and other fixes/features for Kali.
+
 ## fresh.sh (run this AFTER PMK)
 This script configures bspwm and XFCE4.
-
-## [PimpmyKali](https://github.com/Dewalt-arch/pimpmykali)
-This provides fixes and quality-of-live improvements for Kali installs.
