@@ -118,6 +118,7 @@ sudo mkdir -p ~/Library/LaunchAgents
 sudo chown -R $(whoami):staff ~/Library/LaunchAgents
 brew tap homebrew/autoupdate
 brew autoupdate start 86400 --upgrade --cleanup --immediate
+launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 
 # macOS Tweaks
 
