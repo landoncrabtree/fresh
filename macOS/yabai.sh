@@ -3,7 +3,8 @@
 url=$(curl -s https://api.github.com/repos/koekeishiya/yabai/releases/latest \
 | grep "browser_download_url.*tar.gz" \
 | cut -d : -f 2,3 \
-| tr -d \" )
+| tr -d \" \
+| tr -d '')
 
 # Download the file using wget
 wget -qi "$url" -O /tmp/yabai.tar.gz
