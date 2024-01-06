@@ -125,4 +125,10 @@ launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 # Open TextEdit in plaintext mode by default
 defaults write com.apple.TextEdit RichText -int 0
 
+# Fix Docker
+# https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
+
+sudo mkdir -p /usr/local/lib/docker
+sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins /usr/local/lib/docker/cli-plugins
+
 echo "DONE! Enjoy."
