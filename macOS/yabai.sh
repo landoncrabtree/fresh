@@ -8,7 +8,7 @@ brew install koekeishiya/formulae/yabai
 
 # Setup yabai config
 mkdir -p ~/.config/yabai
-wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.config/yabai/yabairc -O ~/.config/yabai/yabairc
+wget https://git.landon.pw/raw/fresh/macOS/.config/yabai/yabairc -O ~/.config/yabai/yabairc
 chmod +x ~/.config/yabai/yabairc
 
 # Setup yabai launch agent
@@ -21,7 +21,7 @@ yabai --start-service
 # Setup skhd (keybinds for yabai)
 brew install koekeishiya/formulae/skhd
 mkdir -p ~/.config/skhd
-wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.config/skhd/skhdrc -O ~/.config/skhd/skhdrc
+wget https://git.landon.pw/raw/fresh/macOS/.config/skhd/skhdrc -O ~/.config/skhd/skhdrc
 chmod +x ~/.config/skhd/skhdrc
 
 # Setup skhd launch agent
