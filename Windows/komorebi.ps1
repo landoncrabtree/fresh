@@ -8,7 +8,7 @@ mkdir "$Env:USERPROFILE\.config\komorebi" -ea 0
 mkdir "$Env:USERPROFILE\.config\wkhd" -ea 0
 
 iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/komorebi.example.json -OutFile "$Env:USERPROFILE\.config\komorebi\komorebi.json"
-iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/whkdrc.sample -OutFile "$Env:USERPROFILE\.config\wkhd\whkdrc"
+iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/whkdrc.sample -OutFile "$Env:USERPROFILE\.config\whkd\whkdrc"
 
 komorebic fetch-app-specific-configuration
 komorebic enable-autostart --config $Env:USERPROFILE\.config\komorebi\komorebi.json --whkd
