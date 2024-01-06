@@ -1,77 +1,75 @@
-#!/bin/bash
-
 # moves focus between windows in the current focused display
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+alt - h : /usr/local/bin/yabai -m window --focus west
+alt - j : /usr/local/bin/yabai -m window --focus south
+alt - k : /usr/local/bin/yabai -m window --focus north
+alt - l : /usr/local/bin/yabai -m window --focus east
 
 # delete focused window
-alt - q : yabai -m window --close
+alt - q : /usr/local/bin/yabai -m window --close
 
 # toggle window split type
-alt - e : yabai -m window --toggle splitß
+alt - e : /usr/local/bin/yabai -m window --toggle splitß
 
 # minimize window
-alt - m : yabai -m window --minimize
+alt - m : /usr/local/bin/yabai -m window --minimize
 
 # rotate tree
-alt - r : yabai -m space --rotate 90
+alt - r : /usr/local/bin/yabai -m space --rotate 90
 
 # mirror tree y-axis
-alt - y : yabai -m space --mirror y-axis
+alt - y : /usr/local/bin/yabai -m space --mirror y-axis
 
 # toggle desktop offset
-alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
+alt - a : /usr/local/bin/yabai -m space --toggle padding; /usr/local/bin/yabai -m space --toggle gap
 
 # toggle window parent zoom
-alt - d : yabai -m window --focus mouse && \
-          yabai -m window --toggle zoom-parent
+alt - d : /usr/local/bin/yabai -m window --focus mouse && \
+          /usr/local/bin/yabai -m window --toggle zoom-parent
 
 # float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
+alt - t : /usr/local/bin/yabai -m window --toggle float;\
+          /usr/local/bin/yabai -m window --grid 4:4:1:1:2:2
 
 # toggle window fullscreen zoom
-alt - f : yabai -m window --focus mouse && \
-          yabai -m window --toggle zoom-fullscreen
+alt - f : /usr/local/bin/yabai -m window --focus mouse && \
+          /usr/local/bin/yabai -m window --toggle zoom-fullscreen
 
 # toggle window native fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
+shift + alt - f : /usr/local/bin/yabai -m window --toggle native-fullscreen
 
 # increase gap in focused space
-# alt - g : yabai -m space --gap rel:10
+# alt - g : /usr/local/bin/yabai -m space --gap rel:10
 
 # decrease gap in focused space
-# shift + alt - g : yabai -m space --gap rel:-10
+# shift + alt - g : /usr/local/bin/yabai -m space --gap rel:-10
 
 # balance size of windows
-shift + alt - 0 : yabai -m space --balance
+shift + alt - 0 : /usr/local/bin/yabai -m space --balance
 
 # swap window
-shift + alt - h : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - l : yabai -m window --swap east
+shift + alt - h : /usr/local/bin/yabai -m window --swap west
+shift + alt - j : /usr/local/bin/yabai -m window --swap south
+shift + alt - k : /usr/local/bin/yabai -m window --swap north
+shift + alt - l : /usr/local/bin/yabai -m window --swap east
 
 # move window
-shift + cmd - h : yabai -m window --warp west
-shift + cmd - j : yabai -m window --warp south
-shift + cmd - k : yabai -m window --warp north
-shift + cmd - l : yabai -m window --warp east
+shift + cmd - h : /usr/local/bin/yabai -m window --warp west
+shift + cmd - j : /usr/local/bin/yabai -m window --warp south
+shift + cmd - k : /usr/local/bin/yabai -m window --warp north
+shift + cmd - l : /usr/local/bin/yabai -m window --warp east
 
 # change layout of desktop
-ctrl + alt - a : yabai -m space --layout bsp
-ctrl + alt - d : yabai -m space --layout float
+ctrl + alt - a : /usr/local/bin/yabai -m space --layout bsp
+ctrl + alt - d : /usr/local/bin/yabai -m space --layout float
 
 # increase window size
-ctrl + alt - h : yabai -m window --resize left:-40:0
-ctrl + alt - j : yabai -m window --resize bottom:0:40
-ctrl + alt - k : yabai -m window --resize top:0:-40
-ctrl + alt - l : yabai -m window --resize right:40:0
+ctrl + alt - h : /usr/local/bin/yabai -m window --resize left:-40:0
+ctrl + alt - j : /usr/local/bin/yabai -m window --resize bottom:0:40
+ctrl + alt - k : /usr/local/bin/yabai -m window --resize top:0:-40
+ctrl + alt - l : /usr/local/bin/yabai -m window --resize right:40:0
 
 # decrease window size
-ctrl + alt + cmd - h : yabai -m window --resize left:40:0
-ctrl + alt + cmd - j : yabai -m window --resize bottom:0:-40
-ctrl + alt + cmd - k : yabai -m window --resize top:0:40
-ctrl + alt + cmd - l : yabai -m window --resize right:-40:0
+ctrl + alt + cmd - h : /usr/local/bin/yabai -m window --resize left:40:0
+ctrl + alt + cmd - j : /usr/local/bin/yabai -m window --resize bottom:0:-40
+ctrl + alt + cmd - k : /usr/local/bin/yabai -m window --resize top:0:40
+ctrl + alt + cmd - l : /usr/local/bin/yabai -m window --resize right:-40:0
