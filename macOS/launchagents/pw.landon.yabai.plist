@@ -4,15 +4,18 @@
 <dict>
     <key>Label</key>
     <string>pw.landon.yabai</string>
-    
+    <key>Program</key>
+        <string>/usr/local/bin/yabai</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/yabai</string>
     </array>
-    
+    <!-- <key>StandardOutPath</key>
+    <string>/Users/landoncrabtree/Library/Logs/yabai.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/landoncrabtree/Library/Logs/yabai.log</string> -->
     <key>RunAtLoad</key>
     <true/>
-    
     <key>KeepAlive</key>
     <true/>
 </dict>
