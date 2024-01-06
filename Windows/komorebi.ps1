@@ -13,4 +13,4 @@ iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/whkdrc.sample -Out
 komorebic fetch-app-specific-configuration
 
 Write-Host "DONE. Create a Scheduled Task with the following command arguments:"
-Write-Host "cmd.exe /C komorebic start -c ""$Env:USERPROFILE\komorebi.json"" --whkd"
+Write-Host "cmd.exe /C komorebic start -c ""$Env:USERPROFILE\.config\komorebi\komorebi.json"" --whkd"
