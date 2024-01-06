@@ -7,7 +7,7 @@ url=$(curl -s https://api.github.com/repos/koekeishiya/yabai/releases/latest \  
 url=$(echo "$url" | sed -e 's/^[[:space:]]*//')
 
 # Download the file using wget
-wget -qi "$url" -O /tmp/yabai.tar.gz
+wget "$url" -O /tmp/yabai.tar.gz
 tar -xzvf /tmp/yabai.tar.gz
 sudo mv /tmp/archive/bin/yabai /usr/local/bin/yabai
 
