@@ -10,10 +10,10 @@
     <array>
         <string>/opt/homebrew/bin/skhd</string>
     </array>
-    <key>StandardOutPath</key>
+    <!-- <key>StandardOutPath</key>
     <string>/Users/landoncrabtree/Library/Logs/skhd.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/landoncrabtree/Library/Logs/skhd.log</string>
+    <string>/Users/landoncrabtree/Library/Logs/skhd.log</string> -->
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
