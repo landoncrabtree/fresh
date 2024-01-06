@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Disable SIP first and then come back."
+sleep 10
+sudo nvram boot-args=-arm64e_preview_abi
+
 brew install koekeishiya/formulae/yabai
 
 # Setup yabai config
