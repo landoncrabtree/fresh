@@ -115,10 +115,9 @@ brew install powershell
 
 # Enable brew autoupdate
 sudo mkdir -p ~/Library/LaunchAgents
-sudo touch ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
+sudo chown -R $(whoami):staff ~/Library/LaunchAgents
 brew tap homebrew/autoupdate
-sudo chown $(whoami):staff ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
-brew autoupdate --start --upgrade --greedy --cleanup
+brew autoupdate start 86400 --upgrade --cleanup --immediate
 
 # macOS Tweaks
 
