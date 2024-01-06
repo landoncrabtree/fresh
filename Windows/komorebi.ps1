@@ -11,4 +11,8 @@ iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/komorebi.example.j
 iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/whkdrc.sample -OutFile "$Env:USERPROFILE\.config\whkd\whkdrc"
 
 komorebic fetch-app-specific-configuration
+
 komorebic enable-autostart --config $Env:USERPROFILE\.config\komorebi\komorebi.json --whkd
+
+# Set WHKD custom config location
+[System.Environment]::SetEnvironmentVariable("WHKD_CONFIG_HOME", "$Env:USERPROFILE\.config\whkd\", "User")
