@@ -4,15 +4,18 @@
 <dict>
     <key>Label</key>
     <string>pw.landon.skhd</string>
-    
+    <key>Program</key>
+        <string>/opt/homebrew/bin/skhd</string>
     <key>ProgramArguments</key>
     <array>
         <string>/opt/homebrew/bin/skhd</string>
     </array>
-    
+    <key>StandardOutPath</key>
+    <string>/Users/landoncrabtree/Library/Logs/skhd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/landoncrabtree/Library/Logs/skhd.log</string>
     <key>RunAtLoad</key>
     <true/>
-    
     <key>KeepAlive</key>
     <true/>
 </dict>
