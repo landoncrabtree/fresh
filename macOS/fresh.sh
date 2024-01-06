@@ -103,10 +103,10 @@ brew install --cask keyboard-maestro
 brew install --cask zoom
 
 # .aliases
-wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.aliases -O ->> ~/.aliases
+wget https://git.landon.pw/raw/fresh/macOS/.aliases -O ->> ~/.aliases
 
 # .zprofile
-wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/.zprofile -O ->> ~/.zprofile
+wget https://git.landon.pw/raw/fresh/macOS/.zprofile -O ->> ~/.zprofile
 
 # Install other development languages
 brew install go
