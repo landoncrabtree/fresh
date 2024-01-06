@@ -1,36 +1,36 @@
 #!/bin/bash
 
-/usr/local/bin/yabai
-/usr/local/bin/yabai -m signal --add event=dock_did_restart action="/usr/local/bin/yabai"
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
 
 # global settings
-/usr/local/bin/yabai -m config external_bar                 all:24:0
-# /usr/local/bin/yabai -m config mouse_follows_focus        on 
-# /usr/local/bin/yabai -m config focus_follows_mouse        autofocus 
-/usr/local/bin/yabai -m config window_placement             second_child
-/usr/local/bin/yabai -m config window_opacity               on 
-/usr/local/bin/yabai -m config window_opacity_duration      0.0
-/usr/local/bin/yabai -m config window_shadow                off 
-/usr/local/bin/yabai -m config insert_feedback_color        0xaad75f5f
-/usr/local/bin/yabai -m config active_window_opacity        1.0
-/usr/local/bin/yabai -m config normal_window_opacity        0.90
-/usr/local/bin/yabai -m config split_ratio                  0.50
-/usr/local/bin/yabai -m config auto_balance                 off 
-/usr/local/bin/yabai -m config mouse_modifier               fn
-/usr/local/bin/yabai -m config mouse_action1                move
-/usr/local/bin/yabai -m config mouse_action2                resize
+yabai -m config external_bar                 all:24:0
+# yabai -m config mouse_follows_focus        on 
+# yabai -m config focus_follows_mouse        autofocus 
+yabai -m config window_placement             second_child
+yabai -m config window_opacity               on 
+yabai -m config window_opacity_duration      0.0
+yabai -m config window_shadow                off 
+yabai -m config insert_feedback_color        0xaad75f5f
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.90
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 off 
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
 
 # general space settings
-/usr/local/bin/yabai -m config layout                       bsp
-/usr/local/bin/yabai -m config top_padding                  0 
-/usr/local/bin/yabai -m config bottom_padding               16
-/usr/local/bin/yabai -m config left_padding                 16
-/usr/local/bin/yabai -m config right_padding                16 
-/usr/local/bin/yabai -m config window_gap                   16
+yabai -m config layout                       bsp
+yabai -m config top_padding                  0 
+yabai -m config bottom_padding               16
+yabai -m config left_padding                 16
+yabai -m config right_padding                16 
+yabai -m config window_gap                   16
 
 # rules
 ## makes system preferences always floating
-/usr/local/bin/yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
 
 
 echo "yabai configuration loaded.."
