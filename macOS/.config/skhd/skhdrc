@@ -8,7 +8,7 @@ alt - l : yabai -m window --focus east
 alt - q : yabai -m window --close
 
 # toggle window split type
-alt - e : yabai -m window --toggle splitß
+alt - e : yabai -m window --toggle split
 
 # minimize window
 alt - m : yabai -m window --minimize
