@@ -104,6 +104,9 @@ brew install --cask gyazo
 brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
+brew install --cask iterm2
+brew install --cask onyx
+brew install --cask omnidisksweeper
 
 # .aliases
 wget https://git.landon.pw/raw/fresh/macOS/.aliases -O ->> ~/.aliases
