@@ -41,8 +41,8 @@ brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
 
 # Install Powerlevel10k Theme
-brew install romkatv/powerlevel10k/powerlevel10k
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM}/themes/powerlevel10k
+sed -i '' 's/robbyrussell/powerlevel10k\/powerlevel10k/' ~/.zshrc
 
 echo "Open new terminal and configure pl10k. Once done, press ENTER."
 read $wait
