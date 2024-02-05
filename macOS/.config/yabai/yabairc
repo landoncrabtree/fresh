@@ -35,32 +35,9 @@ yabai -m signal --add event=window_created action='/Users/landoncrabtree/.config
 yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
 yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
 
-
-# yabai -m signal --add event=window_created action='
-#   yabai -m query --windows --window $YABAI_WINDOW_ID | jq -er ".\"can-resize\" or .\"is-floating\"" || \
-#   yabai -m window $YABAI_WINDOW_ID --toggle float && \
-#   yabai -m window $YABAI_WINDOW_ID --layer above && \
-#   yabai -m window $YABAI_WINDOW_ID --grid 3:3:1:1:1:1
-# '
-
-
 # rules
 ## makes system preferences always floating
 yabai -m rule --add app="^System Settings$" manage=off
-
-# Refresh yabai if a tab in finder or terminal is created or moved to new window
-# https://github.com/koekeishiya/yabai/issues/68
-# yabai -m signal --add event=window_created app="^Terminal$|^Finder$" \
-#     action="yabai -m space --focus next && yabai -m space --focus recent"
-
-# yabai -m signal --add event=window_destroyed app="^Terminal$|^Finder$" \
-#     action="yabai -m space --focus next && yabai -m space --focus recent"
-
-# yabai -m signal --add event=window_moved app="^Terminal$|^Finder$" \
-#     action="yabai -m space --focus next && yabai -m space --focus recent"
-
-# yabai -m signal --add event=window_resized app="^Terminal$|^Finder$" \
-#     action="yabai -m space --focus next && yabai -m space --focus recent"
-
+yabai -m rule --add app="^Ghidra$" manage=off
 
 echo "yabai configuration loaded.."
