@@ -14,6 +14,7 @@ brew install git
 brew install wget
 brew install cmake
 brew install nvm
+brew install ruby
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
