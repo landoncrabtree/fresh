@@ -133,6 +133,7 @@ launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 
 # Open TextEdit in plaintext mode by default
 defaults write com.apple.TextEdit RichText -int 0
+defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures'
 
 # Fix Docker
 # https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
