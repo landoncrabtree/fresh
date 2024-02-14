@@ -7,14 +7,12 @@ sudo softwareupdate --install-rosetta
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install some basic development utils
+# Install daily drivers
 brew install python3
 brew install node
 brew install git
 brew install wget
 brew install cmake
-brew install nvm
-brew install ruby
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
@@ -61,13 +59,16 @@ brew install nmap
 brew install --cask burp-suite
 brew install --cask wireshark
 brew install feroxbuster
-brew install rustscan
 brew install binwalk
 brew install --cask ghidra
 brew install exiftool
 brew install hashcat
 brew install john-jumbo
 brew install bat
+brew install hydra
+brew install sqlmap
+brew install nikto
+brew install wpscanteam/tap/wpscan
 
 # Install regularly used applications
 brew install --cask rectangle
@@ -119,6 +120,7 @@ wget https://git.landon.pw/raw/fresh/macOS/.zprofile -O ->> ~/.zprofile
 brew install go
 brew install rust
 brew install powershell
+brew install ruby
 
 # Enable brew autoupdate
 sudo mkdir -p ~/Library/LaunchAgents
