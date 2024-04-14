@@ -116,6 +116,9 @@ cp .aliases >> ~/.aliases
 # .zprofile
 cp .zprofile >> ~/.zprofile
 
+# .config
+cp -r .config ~/.config
+
 # Install other development languages
 brew install go
 brew install rust
