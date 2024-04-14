@@ -69,6 +69,7 @@ brew install hydra
 brew install sqlmap
 brew install nikto
 brew install wpscanteam/tap/wpscan
+mkdir -p ~/.local/share/wordlists && git clone https://github.com/danielmiessler/SecLists.git ~/.local/share/wordlists/SecLists
 
 # Install regularly used applications
 brew install --cask rectangle
@@ -85,7 +86,6 @@ brew install --cask jetbrains-toolbox
 #brew install --cask clion
 brew install --cask discord
 brew install --cask macupdater
-brew install --cask omnidisksweeper
 brew install --cask obsidian
 brew install --cask the-unarchiver
 brew install --cask microsoft-outlook
@@ -97,9 +97,8 @@ brew install --cask zulu
 brew install --cask vlc
 brew install --cask hiddenbar
 brew install --cask mac2imgur
-brew install --cask notion-enhanced
+brew install --cask notion
 brew install --cask readdle-spark
-brew install --cask steam
 brew install --cask google-drive
 brew install --cask onedrive
 brew install --cask gyazo
@@ -109,6 +108,7 @@ brew install --cask zoom
 brew install --cask iterm2
 brew install --cask onyx
 brew install --cask omnidisksweeper
+brew install --cask raycast
 
 # .aliases
 cp .aliases >> ~/.aliases
