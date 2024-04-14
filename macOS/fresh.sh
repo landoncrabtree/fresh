@@ -111,10 +111,10 @@ brew install --cask onyx
 brew install --cask omnidisksweeper
 
 # .aliases
-wget https://git.landon.pw/raw/fresh/macOS/.aliases -O ->> ~/.aliases
+cp .aliases >> ~/.aliases
 
 # .zprofile
-wget https://git.landon.pw/raw/fresh/macOS/.zprofile -O ->> ~/.zprofile
+cp .zprofile >> ~/.zprofile
 
 # Install other development languages
 brew install go
