@@ -68,7 +68,10 @@ brew install bat
 brew install hydra
 brew install sqlmap
 brew install nikto
-brew install wpscanteam/tap/wpscan
+brew install wpscan
+brew install volatility
+brew install --cask metasploit
+
 mkdir -p ~/.local/share/wordlists && git clone https://github.com/danielmiessler/SecLists.git ~/.local/share/wordlists/SecLists
 
 # Install regularly used applications
@@ -88,7 +91,7 @@ brew install --cask discord
 brew install --cask macupdater
 brew install --cask obsidian
 brew install --cask the-unarchiver
-brew install --cask microsoft-outlook
+#brew install --cask microsoft-outlook
 brew install --cask microsoft-powerpoint
 brew install --cask microsoft-teams
 brew install --cask microsoft-word
