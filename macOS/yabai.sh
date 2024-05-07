@@ -6,6 +6,7 @@ sudo nvram boot-args=-arm64e_preview_abi
 
 brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
+brew install jq
 
 chmod -R +x ~/.config/yabai/
 chmod -R +x ~/.config/skhd/
