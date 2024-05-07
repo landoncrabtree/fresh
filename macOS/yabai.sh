@@ -10,6 +10,8 @@ brew install koekeishiya/formulae/skhd
 chmod -R +x ~/.config/yabai/
 chmod -R +x ~/.config/skhd/
 
+echo "$(whoami) ALL=(root) NOPASSWD:$(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
+
 # Setup yabai launch agent
 # sudo wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/launchagents/pw.landon.yabai.plist -O ~/Library/LaunchAgents/pw.landon.yabai.plist
 # sudo chown $(whoami):staff ~/Library/LaunchAgents/pw.landon.yabai.plist
