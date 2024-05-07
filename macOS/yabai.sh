@@ -6,7 +6,9 @@ sudo nvram boot-args=-arm64e_preview_abi
 
 brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
-chmod +x ~/.config/yabai/yabairc
+
+chmod -R +x ~/.config/yabai/
+chmod -R +x ~/.config/skhd/
 
 # Setup yabai launch agent
 # sudo wget https://raw.githubusercontent.com/landoncrabtree/fresh/main/macOS/launchagents/pw.landon.yabai.plist -O ~/Library/LaunchAgents/pw.landon.yabai.plist
