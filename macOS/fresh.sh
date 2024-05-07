@@ -72,7 +72,8 @@ brew install wpscan
 brew install volatility
 brew install --cask metasploit
 
-mkdir -p ~/.local/share/wordlists && git clone https://github.com/danielmiessler/SecLists.git ~/.local/share/wordlists/SecLists
+sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
+git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
 # Install regularly used applications
 brew install --cask rectangle
