@@ -79,6 +79,7 @@ git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordli
 brew install --cask rectangle
 brew install --cask firefox
 brew install --cask visual-studio-code
+brew install --cask cursor
 brew install --cask appcleaner
 brew install --cask bitwarden
 brew install --cask authy
