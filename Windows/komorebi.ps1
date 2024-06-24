@@ -13,6 +13,9 @@ winget install LGUG2Z.komorebi
 #iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.19/whkdrc.sample -OutFile "$Env:USERPROFILE\.config\whkd\whkdrc"
 #komorebic fetch-app-specific-configuration
 
+# Refresh PATH
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+
 komorebic quickstart
 komorebic enable-autostart --whkd
 komorebic start --whkd
