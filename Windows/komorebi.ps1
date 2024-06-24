@@ -2,7 +2,7 @@ Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'Long
 
 mkdir "$Env:USERPROFILE\.config" -ea 0
 mkdir "$Env:USERPROFILE\.config\komorebi" -ea 0
-mkdir "$Env:USERPROFILE\.config\wkhd" -ea 0
+mkdir "$Env:USERPROFILE\.config\whkd" -ea 0
 [System.Environment]::SetEnvironmentVariable("WHKD_CONFIG_HOME", "$Env:USERPROFILE\.config\whkd\", "User")
 [System.Environment]::SetEnvironmentVariable("KOMOREBI_CONFIG_HOME", "$Env:USERPROFILE\.config\komorebi\", "User")
 
@@ -15,3 +15,4 @@ winget install LGUG2Z.komorebi
 
 komorebic quickstart
 komorebic enable-autostart --whkd
+komorebic start --whkd
