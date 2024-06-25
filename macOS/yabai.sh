@@ -9,8 +9,8 @@ brew install koekeishiya/formulae/skhd
 brew install hammerspoon --cask
 brew install jq
 
-chmod -R +x ~/.config/yabai/
-chmod -R +x ~/.config/skhd/
+chmod -R +x ~/.config/yabai/*
+chmod -R +x ~/.config/skhd/*.sh
 
 echo "$(whoami) ALL=(root) NOPASSWD:$(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
 
