@@ -1,43 +1,86 @@
-#!/bin/bash
+# Focus windows
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
 
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-sudo yabai --load-sa
+# Move windows
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
 
-# global settings
-yabai -m config external_bar                 all:12:0
-# yabai -m config mouse_follows_focus        on
-# yabai -m config focus_follows_mouse        autofocus
-yabai -m config window_placement             second_child
-yabai -m config window_opacity               off
-yabai -m config window_opacity_duration      0.0
-yabai -m config window_shadow                off
-yabai -m config insert_feedback_color        0x00FFFFFF
-yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        0.90
-yabai -m config split_ratio                  0.50
-yabai -m config auto_balance                 off
-yabai -m config mouse_modifier               fn
-yabai -m config mouse_action1                move
-yabai -m config mouse_action2                resize
+# Stack windows
+alt - left : ~/.config/skhd/stack.sh west
+alt - down : ~/.config/skhd/stack.sh south
+alt - up : ~/.config/skhd/stack.sh north
+alt - right : ~/.config/skhd/stack.sh east
+alt - 0x29 :  yabai -m window --toggle float && yabai -m window --toggle float
+alt - 0x21 : yabai -m window --focus stack.prev || yabai -m window --focus stack.last # [
+alt - 0x1E : yabai -m window --focus stack.next || yabai -m window --focus stack.first # ]
 
-# general space settings
-yabai -m config layout                       bsp
-yabai -m config top_padding                  0
-yabai -m config bottom_padding               12
-yabai -m config left_padding                 12
-yabai -m config right_padding                12
-yabai -m config window_gap                   12
+# Resize
+alt - 0x18 : ~/.config/skhd/resize.sh horizontal increase # +
+alt - 0x1B : ~/.config/skhd/resize.sh horizontal decrease  # -
+shift + alt - 0x18 : ~/.config/skhd/resize.sh vertical increase # +
+shift + alt - 0x1B : ~/.config/skhd/resize.sh vertical decrease # -
 
-# check number of windows in space
-# if there is 0 or 1 window(s), set layout to bsp
-# if there are more than one window, set window layout to stack
-yabai -m signal --add event=window_created action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
-yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
-yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
+# Manipulate windows
+alt - t : yabai -m window --toggle float; yabai -m window --grid 4:4:1:1:2:2
+shift + alt - f : yabai -m window --focus mouse && yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle native-fullscreen
+alt - q : yabai -m window --close
+alt - m : yabai -m window --minimize
 
-# rules
-## makes system preferences always floating
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Ghidra$" manage=off
+# Window manager options
+shift + alt - r : yabai -m space --balance
+alt - p : ~/.config/skhd/pause.sh
 
-echo "yabai configuration loaded.."
+# Layouts
+alt - x : yabai -m space --mirror x-axis
+alt - y : yabai -m space --mirror y-axis
+alt - r : yabai -m space --rotate 90
+
+# Workspaces
+alt - 1 : ~/.config/skhd/focus.sh 1
+alt - 2 : ~/.config/skhd/focus.sh 2
+alt - 3 : ~/.config/skhd/focus.sh 3
+alt - 4 : ~/.config/skhd/focus.sh 4
+alt - 5 : ~/.config/skhd/focus.sh 5
+alt - 6 : ~/.config/skhd/focus.sh 6
+alt - 7 : ~/.config/skhd/focus.sh 7
+alt - 8 : ~/.config/skhd/focus.sh 8
+alt - 9 : ~/.config/skhd/focus.sh 9
+alt - 0 : ~/.config/skhd/focus.sh 10
+
+# Move windows across workspaces
+shift + alt - 1 : ~/.config/skhd/move.sh 1
+shift + alt - 2 : ~/.config/skhd/move.sh 2
+shift + alt - 3 : ~/.config/skhd/move.sh 3
+shift + alt - 4 : ~/.config/skhd/move.sh 4
+shift + alt - 5 : ~/.config/skhd/move.sh 5
+shift + alt - 6 : ~/.config/skhd/move.sh 6
+shift + alt - 7 : ~/.config/skhd/move.sh 7
+shift + alt - 8 : ~/.config/skhd/move.sh 8
+shift + alt - 9 : ~/.config/skhd/move.sh 9
+shift + alt - 0 : ~/.config/skhd/move.sh 10
+
+
+# toggle desktop offset
+# alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+# increase gap in focused space
+# alt - g : yabai -m space --gap rel:10
+
+# decrease gap in focused space
+# shift + alt - g : yabai -m space --gap rel:-10
+
+# move window
+# shift + cmd - h : yabai -m window --warp west
+# shift + cmd - j : yabai -m window --warp south
+# shift + cmd - k : yabai -m window --warp north
+# shift + cmd - l : yabai -m window --warp east
+
+# change layout of desktop
+#ctrl + alt - a : yabai -m space --layout bsp
+#ctrl + alt - d : yabai -m space --layout float
