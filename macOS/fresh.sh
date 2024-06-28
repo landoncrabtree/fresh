@@ -65,6 +65,7 @@ brew install exiftool
 brew install hashcat
 brew install john-jumbo
 brew install bat
+brew install lsd
 brew install hydra
 brew install sqlmap
 brew install nikto
