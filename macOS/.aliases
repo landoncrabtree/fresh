@@ -1,2 +1,4 @@
 alias ghidra="ghidraRun"
 alias lazy_nmap="sudo nmap --min-rate 4500 --max-rtt-timeout 1500ms"
+alias cat="bat"
+alias ls="lsd"
