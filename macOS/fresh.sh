@@ -135,7 +135,8 @@ brew install ruby
 sudo mkdir -p ~/Library/LaunchAgents
 sudo chown -R $(whoami):staff ~/Library/LaunchAgents
 brew tap homebrew/autoupdate
-brew autoupdate start 86400 --upgrade --cleanup --immediate
+brew install pinentry-mac
+brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo
 launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 
 # macOS Tweaks
