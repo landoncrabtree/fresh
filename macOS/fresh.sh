@@ -72,6 +72,7 @@ brew install nikto
 brew install wpscan
 brew install volatility
 brew install --cask metasploit
+brew install --cask binary-ninja
 
 sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
@@ -86,7 +87,6 @@ brew install --cask bitwarden
 brew install --cask authy
 brew install --cask private-internet-access
 brew install --cask docker
-brew install --cask jetbrains-toolbox
 #brew install --cask intellij-idea
 #brew install --cask pycharm
 #brew install --cask clion
