@@ -78,6 +78,7 @@ sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/l
 git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
 # Install regularly used applications
+brew install --cask shottr
 brew install --cask rectangle
 brew install --cask firefox
 brew install --cask visual-studio-code
