@@ -31,13 +31,16 @@ yabai -m config window_gap                   12
 # check number of windows in space
 # if there is 0 or 1 window(s), set layout to bsp
 # if there are more than one window, set window layout to stack
-yabai -m signal --add event=window_created action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
-yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
-yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh $YABAI_WINDOW_ID'
+yabai -m signal --add event=window_created action='/Users/landoncrabtree/.config/yabai/auto.sh'
+yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh'
+yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh'
+yabai -m signal --add event=window_minimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
+yabai -m signal --add event=deminimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
 
 # rules
 ## makes system preferences always floating
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Ghidra$" manage=off
+yabai -m rule --add app="^Flameshot$" manage=off mouse_follows_focus=off
 
 echo "yabai configuration loaded.."
