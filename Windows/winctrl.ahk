@@ -1,9 +1,7 @@
-TraySetIcon("accessibilitycpl.dll","6") ; Keyboard Icon
-;#Persistent https://www.autohotkey.com/docs/commands/_Persistent.htm
-SetWorkingDir(A_ScriptDir) ; Ensures a consistent starting directory.
+#Persistent
 #SingleInstance force
+SetWorkingDir(A_ScriptDir) ; Ensures a consistent starting directory.
 ;#InstallKeybdHook ; see: https://www.autohotkey.com/docs/v1/lib/_HotkeyModifierTimeout.htm
-;SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 
 ; doc:
 ; https://www.ahkgen.com/
@@ -61,3 +59,7 @@ GroupAdd "AltTabWindow", "ahk_class #32771"  ; Older, or with classic alt-tab en
 
 ; Get macOS-like window management
 #Up::Send "#{Tab}" ; Ctrl+Up => Ctrl+Tab
+
+
+
+
