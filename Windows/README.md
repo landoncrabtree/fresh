@@ -32,7 +32,6 @@ Make Windows hotkeys act more like macOS. Replace CTRL with WIN and viceversa, a
 ```pwsh
 $homeDir = [System.Environment]::GetFolderPath('Home')
 $targetFilePath = Join-Path -Path $homeDir -ChildPath ".config\ahk\winctrl.ahk"
-$startupFolder = Join-Path -Path [System.Environment]::GetFolderPath('Startup') -ChildPath "winctrl.ahk"
 
 # Create necessary directories
 $targetDir = [System.IO.Path]::GetDirectoryName($targetFilePath)
@@ -41,8 +40,6 @@ if (-not (Test-Path -Path $targetDir)) {
 }
 
 iwr -useb https://raw.githubusercontent.com/landoncrabtree/fresh/main/Windows/.config/ahk/winctrl.ahk -OutFile $targetFilePath
-
-$startupContent = "Start """" `"$targetFilePath`""
-Set-Content -Path $startupFolder -Value $startupContent
+schtasks /create /tn "RunWinCtrlOnLogon" /tr "C:\Users\landoncrabtree\.config\ahk\winctrl.ahk" /sc onlogon /rl highest /f
 ```
 
