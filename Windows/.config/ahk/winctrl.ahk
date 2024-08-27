@@ -1,4 +1,3 @@
-#Persistent
 #SingleInstance force
 SetWorkingDir(A_ScriptDir) ; Ensures a consistent starting directory.
 ;#InstallKeybdHook ; see: https://www.autohotkey.com/docs/v1/lib/_HotkeyModifierTimeout.htm
@@ -19,8 +18,22 @@ SetWorkingDir(A_ScriptDir) ; Ensures a consistent starting directory.
 
 ; sharpkeys: https://github.com/randyrants/sharpkeys/releases/
 ; online .reg remap generator: https://n8ta.com/projects/windows_key_remapper.html
-; LWin --> LALT
-; LAlt --> RControl
+
+full_command_line := DllCall("GetCommandLine", "str")
+
+if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
+{
+    try
+    {
+        if A_IsCompiled
+            Run '*RunAs "' A_ScriptFullPath '" /restart'
+        else
+            Run '*RunAs "' A_AhkPath '" /restart "' A_ScriptFullPath '"'
+    }
+    ExitApp
+}
+
+;MsgBox "A_IsAdmin: " A_IsAdmin "`nCommand line: " full_command_line
 
 ; Create a group for all terminal-related windows
 GroupAdd "Terminals", "ahk_exe cmd.exe"
