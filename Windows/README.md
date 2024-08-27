@@ -30,7 +30,7 @@ iwr -useb 'https://raw.githubusercontent.com/landoncrabtree/fresh/main/Windows/r
 ## winctrl.ahk
 Make Windows hotkeys act more like macOS. Replace CTRL with WIN and viceversa, and retain functionality in apps like Terminal.
 ```pwsh
-$homeDir = [System.Environment]::GetFolderPath('Home')
+$homeDir = "$env:USERPROFILE"
 $targetFilePath = Join-Path -Path $homeDir -ChildPath ".config\ahk\winctrl.ahk"
 
 # Create necessary directories
