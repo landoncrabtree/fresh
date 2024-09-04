@@ -14,3 +14,17 @@ Jetbrains Toolbox Plugins:
 * One Dark theme by Mark Skelton
 * Atom Material Icons by Atom Material Themes & Plugins
 * GitToolBox by Lukasz Zielinski
+
+### BetterTouchTool (yabai)
+
+Remove swipe animation using Yabai + BetterTouchTool.
+
+Swipe Left
+```
+/opt/homebrew/bin/yabai -m space --focus $(/opt/homebrew/bin/yabai -m query --spaces --display mouse | /opt/homebrew/bin/jq ".[].index" | grep $((1 + `/opt/homebrew/bin/yabai -m query --spaces --space mouse | /opt/homebrew/bin/jq ".index"`)))
+```
+
+Swipe Right
+```
+/opt/homebrew/bin/yabai -m space --focus $(/opt/homebrew/bin/yabai -m query --spaces --display mouse | /opt/homebrew/bin/jq ".[].index" | grep $((`/opt/homebrew/bin/yabai -m query --spaces --space mouse | /opt/homebrew/bin/jq ".index"` - 1)))
+```
