@@ -43,3 +43,9 @@ iwr -useb https://raw.githubusercontent.com/landoncrabtree/fresh/main/Windows/.c
 schtasks /create /tn "RunWinCtrlOnLogon" /tr "C:\Users\landoncrabtree\.config\ahk\winctrl.ahk" /sc onlogon /rl highest /f
 ```
 
+## mysys
+
+```
+ pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+```
+
