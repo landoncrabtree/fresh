@@ -13,6 +13,12 @@ brew install node
 brew install git
 brew install wget
 brew install cmake
+brew install pyenv
+
+# Add environment variables for pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
@@ -36,7 +42,6 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git $ZSH
 # wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 # wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
-brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
 
 # Install Powerlevel10k Theme
@@ -103,7 +108,7 @@ brew install --cask microsoft-excel
 brew install --cask zulu
 brew install --cask vlc
 brew install --cask hiddenbar
-brew install --cask mac2imgur
+# brew install --cask mac2imgur
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
