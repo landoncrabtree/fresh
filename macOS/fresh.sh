@@ -156,5 +156,6 @@ defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures'
 
 sudo mkdir -p /usr/local/lib/docker
 sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins /usr/local/lib/docker/cli-plugins
+brew pyenv-sync
 
 echo "DONE! Enjoy."
