@@ -1,7 +1,6 @@
 GEMSDIR=$(gem environment gemdir)/bin
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="$(brew --prefix python@3.12)/libexec/bin:$PATH" 
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$GEMSDIR:$PATH"
