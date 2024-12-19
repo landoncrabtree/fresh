@@ -7,5 +7,8 @@ export PATH="$PATH:/opt/homebrew/Cellar/john-jumbo/1.9.0_1/share/john"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$PATH:$HOME/.gem/bin"
 export PATH="$PATH:$HOME/go/bin"
-export CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
+# export CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib"
 export COPY_CLIPBOARD=TRUE
