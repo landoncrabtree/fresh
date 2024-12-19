@@ -69,13 +69,11 @@ brew install --cask ghidra
 brew install exiftool
 brew install hashcat
 brew install john-jumbo
-brew install bat
-brew install lsd
 brew install hydra
 brew install sqlmap
 brew install nikto
-brew install wpscan
-brew install volatility
+# brew install wpscan
+# brew install volatility
 brew install --cask metasploit
 brew install --cask binary-ninja
 
@@ -123,6 +121,7 @@ brew install --cask omnidisksweeper
 brew install --cask raycast
 
 # .aliases
+brew install bat eza colordiff
 cp .aliases >> ~/.aliases
 
 # .zprofile
