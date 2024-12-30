@@ -123,6 +123,7 @@ brew install --cask iterm2
 brew install --cask onyx
 brew install --cask omnidisksweeper
 brew install --cask raycast
+brew install fzf
 
 # .aliases
 brew install bat eza colordiff
@@ -150,9 +151,9 @@ launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 
 # macOS Tweaks
 
-# Open TextEdit in plaintext mode by default
-defaults write com.apple.TextEdit RichText -int 0
-defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures'
+defaults write com.apple.TextEdit RichText -int 0 # Open TextEdit in plaintext mode by default
+defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures' # Save screenshots to ~/Pictures
+defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" && killall Finder # Search current folder rather than system-wide
 
 # Fix Docker
 # https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
