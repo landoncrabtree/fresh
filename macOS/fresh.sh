@@ -109,7 +109,7 @@ brew install --cask microsoft-word
 brew install --cask microsoft-excel
 brew install --cask zulu
 brew install --cask vlc
-brew install --cask hiddenbar
+brew install --cask dropshelf
 # brew install --cask mac2imgur
 brew install --cask notion
 brew install --cask readdle-spark
