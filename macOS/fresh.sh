@@ -76,6 +76,11 @@ brew install nikto
 brew install --cask metasploit
 brew install --cask binary-ninja
 
+# Install monitoring tools
+brew install --cask filemonitor
+brew install --cask processmonitor
+brew install --cask taskexplorer
+
 sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
