@@ -155,6 +155,26 @@ defaults write com.apple.TextEdit RichText -int 0 # Open TextEdit in plaintext m
 defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures' # Save screenshots to ~/Pictures
 defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" && killall Finder # Search current folder rather than system-wide
 
+# Define arrays for each file type category
+archive_types=(.zip .7z .rar .tar .gz .bz2 .xz .tar.gz .tar.bz2 .tar.xz)
+web_types=(.html .htm .shtml .shtm)
+code_types=(.js .py .rs .go .java .c .cpp .h .hpp .php .css .scss .sass .md .txt .log .sh .zsh .bash .json .yaml .yml .xml)
+
+# Set default file opener for archive types
+for ext in "${archive_types[@]}"; do
+    duti -s $(osascript -e 'id of app "The Unarchiver"') "$ext" all
+done
+
+# Set default file opener for web types
+for ext in "${web_types[@]}"; do
+    duti -s $(osascript -e 'id of app "Firefox"') "$ext" all
+done
+
+# Set default file opener for code types
+for ext in "${code_types[@]}"; do
+    duti -s $(osascript -e 'id of app "Cursor"') "$ext" all
+done
+
 # Fix Docker
 # https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
 
