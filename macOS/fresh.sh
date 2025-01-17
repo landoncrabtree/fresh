@@ -158,6 +158,7 @@ defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" && killall
 # Define arrays for each file type category
 archive_types=(.zip .7z .rar .tar .gz .bz2 .xz .tar.gz .tar.bz2 .tar.xz)
 web_types=(.html .htm .shtml .shtm)
+video_types=(.mp4 .mkv .mov .avi .flv .mpeg .webm .wmv .m3u8 .m4v .mpg)
 code_types=(.js .py .rs .go .java .c .cpp .h .hpp .php .css .scss .sass .md .txt .log .sh .zsh .bash .json .yaml .yml .xml)
 
 # Set default file opener for archive types
@@ -168,6 +169,11 @@ done
 # Set default file opener for web types
 for ext in "${web_types[@]}"; do
     duti -s $(osascript -e 'id of app "Firefox"') "$ext" all
+done
+
+# Set default file opener for video types
+for ext in "${video_types[@]}"; do
+    duti -s $(osascript -e 'id of app "IINA"') "$ext" all
 done
 
 # Set default file opener for code types
