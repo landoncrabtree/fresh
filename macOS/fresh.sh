@@ -86,6 +86,7 @@ git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordli
 
 # Install regularly used applications
 brew install --cask shottr
+brew install --cask alfred
 brew install --cask rectangle
 brew install --cask firefox
 brew install --cask visual-studio-code
@@ -102,6 +103,7 @@ brew install --cask discord
 brew install --cask macupdater
 brew install --cask obsidian
 brew install --cask the-unarchiver
+brew install --cask betterdisplay
 #brew install --cask microsoft-outlook
 brew install --cask microsoft-powerpoint
 brew install --cask microsoft-teams
