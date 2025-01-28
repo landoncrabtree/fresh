@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # If external display is connected, run yabai.
-MONITOR_COUNT=$(system_profiler SPDisplaysDataType | grep "Display Type" | wc -l)
-if [ $MONITOR_COUNT -gt 1 ]; then
+MONITOR_COUNT=$(system_profiler SPDisplaysDataType | grep "UI Looks like" | wc -l)
+if [ $MONITOR_COUNT -ge 1 ]; then
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
     sudo yabai --load-sa
 
@@ -38,7 +38,7 @@ if [ $MONITOR_COUNT -gt 1 ]; then
     yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh'
     yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh'
     yabai -m signal --add event=window_minimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
-    yabai -m signal --add event=deminimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
+    yabai -m signal --add event=window_deminimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
 
     # rules
     ## makes system preferences always floating
