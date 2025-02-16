@@ -125,7 +125,10 @@ brew install --cask iterm2
 brew install --cask onyx
 brew install --cask omnidisksweeper
 brew install --cask raycast
+brew install --cask rocket
+brew install --cask unnaturalscrollwheels
 brew install fzf
+brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 
 # .aliases
 brew install bat eza colordiff
