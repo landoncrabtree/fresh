@@ -193,4 +193,8 @@ sudo mkdir -p /usr/local/lib/docker
 sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins /usr/local/lib/docker/cli-plugins
 brew pyenv-sync
 
+# fix alt <char> https://apple.stackexchange.com/questions/388552/macos-how-to-turn-off-option-key-printing-special-characters-in-vs-code-intell
+wget https://gist.githubusercontent.com/greneholt/e7d5373f96cc0f815717c7666790324d/raw/af9e3094669858c1ddb3c0c8e28b43f56a120f92/QWERTY%2520no%2520option.keylayout -O ~/Library/Keyboard\ Layouts/QWERTY\ no\ option.keylayout
+echo "keyboard layout downloaded, change via settings"
+
 echo "DONE! Enjoy."
