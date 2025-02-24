@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # check if yabai -m window conains 'failed to connect to socket'
 yabai -m window

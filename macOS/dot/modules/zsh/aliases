@@ -5,4 +5,3 @@ alias ls="eza -al --icons=always --color=always --group-directories-first -g --g
 alias lst="eza -al -snewest --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
 alias lss="eza -al -ssize --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
 alias diff="colordiff"
-# alias python3="$(pyenv prefix)/bin/$(ls -v $(pyenv prefix)/bin/python3* | grep -E 'python3.[0-9]+$' | tail -n 1)"

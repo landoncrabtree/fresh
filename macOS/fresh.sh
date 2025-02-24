@@ -112,10 +112,7 @@ brew install --cask microsoft-excel
 brew install --cask zulu
 brew install --cask iina
 brew install --cask dropshelf
-<<<<<<< HEAD
 # brew install --cask mac2imgur
-=======
->>>>>>> 7c08ad8 (new dotfiles)
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
