@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # https://github.com/koekeishiya/yabai/issues/671
 
 dir=$1

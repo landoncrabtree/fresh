@@ -1,0 +1,11 @@
+[
+    {
+        "key": "ctrl+shift+a",
+        "command": "-cursorLineStartSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.emmet.action.balanceOut"
+    }
+]

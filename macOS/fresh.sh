@@ -112,7 +112,10 @@ brew install --cask microsoft-excel
 brew install --cask zulu
 brew install --cask iina
 brew install --cask dropshelf
+<<<<<<< HEAD
 # brew install --cask mac2imgur
+=======
+>>>>>>> 7c08ad8 (new dotfiles)
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
@@ -127,18 +130,15 @@ brew install --cask omnidisksweeper
 brew install --cask raycast
 brew install --cask rocket
 brew install --cask unnaturalscrollwheels
+brew install --cask aldente
 brew install fzf
 brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 
-# .aliases
-brew install bat eza colordiff
-cp .aliases >> ~/.aliases
-
-# .zprofile
-cp .zprofile >> ~/.zprofile
-
-# .config
-cp -r .config ~/.config
+# dot files (https://github.com/pablopunk/dot)
+# this makes managing dotfiles easier by symlinking them to their respective locations
+brew install pablopunk/brew/dot
+cd dot
+dot
 
 # Install other development languages
 brew install go
@@ -198,3 +198,4 @@ wget https://gist.githubusercontent.com/greneholt/e7d5373f96cc0f815717c766679032
 echo "keyboard layout downloaded, change via settings"
 
 echo "DONE! Enjoy."
+

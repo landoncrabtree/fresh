@@ -1,0 +1,50 @@
+#!/bin/zsh
+
+# If external display is connected, run yabai.
+MONITOR_COUNT=$(system_profiler SPDisplaysDataType | grep "UI Looks like" | wc -l)
+if [ $MONITOR_COUNT -ge 1 ]; then
+    yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+    sudo yabai --load-sa
+
+    # global settings
+    yabai -m config external_bar                 all:12:0
+    # yabai -m config mouse_follows_focus        on
+    # yabai -m config focus_follows_mouse        autofocus
+    yabai -m config window_placement             second_child
+    yabai -m config window_opacity               off
+    yabai -m config window_opacity_duration      0.0
+    yabai -m config window_shadow                off
+    yabai -m config insert_feedback_color        0x00FFFFFF
+    yabai -m config active_window_opacity        1.0
+    yabai -m config normal_window_opacity        0.90
+    yabai -m config split_ratio                  0.50
+    yabai -m config auto_balance                 off
+    yabai -m config mouse_modifier               fn
+    yabai -m config mouse_action1                move
+    yabai -m config mouse_action2                resize
+
+    # general space settings
+    yabai -m config layout                       bsp
+    yabai -m config top_padding                  0
+    yabai -m config bottom_padding               12
+    yabai -m config left_padding                 12
+    yabai -m config right_padding                12
+    yabai -m config window_gap                   12
+
+    # check number of windows in space
+    # if there is 0 or 1 window(s), set layout to bsp
+    # if there are more than one window, set window layout to stack
+    yabai -m signal --add event=window_created action='/Users/landoncrabtree/.config/yabai/auto.sh'
+    yabai -m signal --add event=window_destroyed action='/Users/landoncrabtree/.config/yabai/auto.sh'
+    yabai -m signal --add event=window_moved action='/Users/landoncrabtree/.config/yabai/auto.sh'
+    yabai -m signal --add event=window_minimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
+    yabai -m signal --add event=window_deminimized action='/Users/landoncrabtree/.config/yabai/auto.sh'
+
+    # rules
+    ## makes system preferences always floating
+    yabai -m rule --add app="^System Settings$" manage=off
+    yabai -m rule --add app="^Ghidra$" manage=off
+    yabai -m rule --add app="^Flameshot$" manage=off mouse_follows_focus=off
+
+    echo "yabai configuration loaded.."
+fi

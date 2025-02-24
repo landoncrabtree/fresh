@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/bin/zsh
 
 space=$1
-
 
 current_spaces=$(yabai -m query --spaces | jq length)
 

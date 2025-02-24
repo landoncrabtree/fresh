@@ -4,8 +4,12 @@
 This script install all necessary tools that I regularly use, including development runtimes (Python, Node, etc), applications (Discord, Bitwarden, etc), shell themes/plugins, and application autoupdates.
 
 ```sh
-bash <(curl -Ls https://git.landon.pw/raw/fresh/macOS/fresh.sh)
+git clone https://github.com/landoncrabtree/fresh.git
+cd macOS
+./fresh.sh # core install
+./yabai.sh # optional yabai and skhd install
 ```
+<<<<<<< HEAD
 
 Jetbrains Toolbox Plugins:
 * .ignore by Jetbrains
@@ -28,3 +32,5 @@ Swipe Right
 ```
 /opt/homebrew/bin/yabai -m space --focus $(/opt/homebrew/bin/yabai -m query --spaces --display mouse | /opt/homebrew/bin/jq ".[].index" | grep $((`/opt/homebrew/bin/yabai -m query --spaces --space mouse | /opt/homebrew/bin/jq ".index"` - 1)))
 ```
+=======
+>>>>>>> 7c08ad8 (new dotfiles)
