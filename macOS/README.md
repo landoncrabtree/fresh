@@ -30,3 +30,9 @@ Swipe Right
 ```sh
 /opt/homebrew/bin/yabai -m space --focus $(/opt/homebrew/bin/yabai -m query --spaces --display mouse | /opt/homebrew/bin/jq ".[].index" | grep $((`/opt/homebrew/bin/yabai -m query --spaces --space mouse | /opt/homebrew/bin/jq ".index"` - 1)))
 ```
+
+### Battery / Sleep (Macbooks, primarily)
+
+- `sudo pmset disableassertion InternalPreventSleep`
+- <https://bugzilla.mozilla.org/show_bug.cgi?id=1821102>
+- All typical sleep settings & disable notifications on sleep (SleepAid to diagnose).
