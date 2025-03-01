@@ -157,6 +157,17 @@ defaults write com.apple.TextEdit RichText -int 0 # Open TextEdit in plaintext m
 defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures' # Save screenshots to ~/Pictures
 defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" && killall Finder # Search current folder rather than system-wide
 
+# personal battery tweaks
+# sudo pmset -a powernap 0 # disable power nap
+# sudo pmset -a womp 0 # disable wake for network
+# sudo pmset -a networkoversleep 0 # disable network priority
+
+# server-type battery tweaks
+# sudo pmset -a powernap 1 # enable powernap
+# sudo pmset -a womp 1 # enable wake for network
+# sudo pmset -a SleepDisabled 1 # disable sleep entirely
+# sudo pmset -a networkoversleep 1 # prioritize network over sleep
+
 # Define arrays for each file type category
 archive_types=(.zip .7z .rar .tar .gz .bz2 .xz .tar.gz .tar.bz2 .tar.xz)
 web_types=(.html .htm .shtml .shtm)
