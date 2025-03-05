@@ -16,5 +16,13 @@ return {
             source = "./stack.sh",
             output = "~/.config/skhd/stack.sh",
         },
+        {
+            source = "./pause.sh",
+            output = "~/.config/skhd/pause.sh",
+        },
+        {
+            source = "./resize.sh",
+            output = "~/.config/skhd/resize.sh",
+        }
     },
 }
