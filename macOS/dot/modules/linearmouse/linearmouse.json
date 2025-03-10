@@ -1,0 +1,57 @@
+{
+  "schemes" : [
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.875,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
+      "buttons" : {
+        "mappings" : [
+          {
+            "command" : false,
+            "shift" : false,
+            "repeat" : true,
+            "action" : "missionControl.spaceRight",
+            "option" : false,
+            "control" : false,
+            "button" : 3
+          },
+          {
+            "repeat" : true,
+            "shift" : false,
+            "button" : 4,
+            "option" : false,
+            "command" : false,
+            "action" : "missionControl.spaceLeft",
+            "control" : false
+          }
+        ],
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x99",
+          "productName" : "Razer Basilisk V3",
+          "category" : "mouse",
+          "vendorID" : "0x1532"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+}

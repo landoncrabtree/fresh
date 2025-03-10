@@ -1,4 +1,5 @@
 return {
+    brew = { "zellij" },
     config = {
         {
             source = "./config.kdl",

@@ -70,10 +70,6 @@ brew install hashcat
 brew install john-jumbo
 brew install hydra
 brew install sqlmap
-brew install nikto
-# brew install wpscan
-# brew install volatility
-brew install --cask metasploit
 brew install --cask binary-ninja
 
 # Install monitoring tools
@@ -126,7 +122,6 @@ brew install --cask onyx
 brew install --cask omnidisksweeper
 brew install --cask raycast
 brew install --cask rocket
-brew install --cask linearmouse
 brew install --cask aldente
 brew install fzf
 brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
