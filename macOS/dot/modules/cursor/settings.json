@@ -2,6 +2,7 @@
     "workbench.colorTheme": "One Dark",
     "files.autoSave": "onFocusChange",
     "editor.suggestSelection": "first",
+    "editor.detectIndentation": true,
     "editor.fontSize": 14,
     "editor.inlineSuggest.enabled": true,
     "editor.tokenColorCustomizations": {
@@ -74,13 +75,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8",
-        "editor.formatOnType": true
     },
     "prettier.tabWidth": 4,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
     "editor.accessibilitySupport": "off",
     "files.exclude": {
         "**/.git": false,
