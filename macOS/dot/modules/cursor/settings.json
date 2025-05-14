@@ -115,5 +115,6 @@
         "*.db3": "${capture}.${extname}-*",
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
-    }
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }

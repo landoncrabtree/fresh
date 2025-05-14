@@ -7,5 +7,9 @@
     {
         "key": "ctrl+shift+a",
         "command": "editor.emmet.action.balanceOut"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
     }
 ]
