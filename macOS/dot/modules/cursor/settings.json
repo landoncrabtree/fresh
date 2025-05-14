@@ -1,5 +1,7 @@
 {
-    "workbench.colorTheme": "One Dark",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredDarkColorTheme": "One Dark",
     "files.autoSave": "onFocusChange",
     "editor.suggestSelection": "first",
     "editor.detectIndentation": true,
@@ -66,10 +68,7 @@
     "editor.stickyScroll.enabled": true,
     "python.defaultInterpreterPath": "~/.pyenv/shims/python3",
     "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
+        "*": true,
     },
     "editor.unicodeHighlight.nonBasicASCII": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
