@@ -30,7 +30,7 @@ function Install-App {
 $apps = @(
     @{ Id = "VideoLAN.VLC"; Name = "VLC" },
     @{ Id = "Bitwarden.Bitwarden"; Name = "Bitwarden" },
-    @{ Id = "Cursor.Cursor"; Name = "Cursor" },
+    @{ Id = "Anysphere.Cursor"; Name = "Cursor" },
     @{ Id = "Mozilla.Firefox"; Name = "Firefox" },
     @{ Id = "Discord.Discord"; Name = "Discord" },
     @{ Id = "Notepad++.Notepad++"; Name = "Notepad++" },
