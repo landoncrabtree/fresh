@@ -3,6 +3,9 @@
 sudo apt update -y
 sudo apt upgrade -y
 
+sudo apt install eza -y
+sudo apt install bat -y
+
 # https://github.com/blindpentester/the-essentials
 cd /opt  
 sudo git clone https://github.com/blindpentester/the-essentials.git  
