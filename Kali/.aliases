@@ -1,1 +1,8 @@
+alias ghidra="ghidraRun"
 alias lazy_nmap="sudo nmap --min-rate 4500 --max-rtt-timeout 1500ms"
+alias cat="batcat --paging=never"
+alias ls="eza -al --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
+alias lst="eza -al -snewest --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
+alias lss="eza -al -ssize --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
+alias diff="colordiff"
+alias brew="sudo apt"
