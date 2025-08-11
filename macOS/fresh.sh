@@ -13,12 +13,7 @@ brew install node
 brew install git
 brew install wget
 brew install cmake
-brew install pyenv
-
-# Add environment variables for pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+brew install landoncrabtree/brewpy
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
@@ -36,23 +31,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git $ZSH_CUSTOM/plugins/fast-syntax-highlighting
 #git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 
-# Install fonts for Powerlevel10k (MesloLGS)
-# wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-# wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-# wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-# wget -P ~/Library/Fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-
 brew install --cask font-meslo-lg-nerd-font
 
 # Install Powerlevel10k Theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM}/themes/powerlevel10k
 sed -i '' 's/robbyrussell/powerlevel10k\/powerlevel10k/' ~/.zshrc
 
-echo "Open new terminal and configure pl10k. Once done, press ENTER."
-read $wait
-
 # Enable plugins
-sed -i '' 's/plugins=(git)/plugins=(git zsh-autosuggestions fast-syntax-highlighting)/' ~/.zshrc
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions fast-syntax-highlighting)/' ~/.zshrc
 
 # Add aliases
 echo "[[ -f ~/.aliases ]] && source ~/.aliases" >> ~/.zshrc
