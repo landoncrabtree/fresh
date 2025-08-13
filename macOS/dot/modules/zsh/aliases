@@ -5,3 +5,4 @@ alias ls="eza -al --icons=always --color=always --group-directories-first -g --g
 alias lst="eza -al -snewest --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
 alias lss="eza -al -ssize --icons=always --color=always --group-directories-first -g --git --time-style='+%m/%d/%Y %I:%M:%S %P'"
 alias diff="colordiff"
+alias cursor="/Applications/Cursor.app/Contents/MacOS/Cursor"
