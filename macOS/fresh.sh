@@ -19,9 +19,6 @@ brew install landoncrabtree/brewpy
 brew install cairo
 brew install pango
 
-# misc
-brew install mysql-client
-
 # Install OhMyZsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -63,15 +60,16 @@ brew install --cask filemonitor
 brew install --cask processmonitor
 brew install --cask taskexplorer
 
+# Wordlists
 sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
 # Install regularly used applications
 brew install --cask shottr
-brew install --cask alfred
+#brew install --cask alfred
 brew install --cask rectangle
 brew install --cask firefox
-brew install --cask visual-studio-code
+#brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask appcleaner
 brew install --cask bitwarden
@@ -94,7 +92,7 @@ brew install --cask microsoft-excel
 brew install --cask zulu
 brew install --cask iina
 brew install --cask dropshelf
-# brew install --cask mac2imgur
+#brew install --cask mac2imgur
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
@@ -107,13 +105,14 @@ brew install --cask iterm2
 brew install --cask onyx
 brew install --cask omnidisksweeper
 brew install --cask raycast
-brew install --cask rocket
 brew install --cask aldente
+brew install --cask bartender
+brew install mysql-client
+brew install artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
 brew install fzf
 brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 
 # dot files (https://github.com/pablopunk/dot)
-# this makes managing dotfiles easier by symlinking them to their respective locations
 brew install pablopunk/brew/dot
 cd dot
 dot
@@ -133,7 +132,6 @@ brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo
 launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
 
 # macOS Tweaks
-
 defaults write com.apple.TextEdit RichText -int 0 # Open TextEdit in plaintext mode by default
 defaults write com.apple.screencapture location '/Users/landoncrabtree/Pictures' # Save screenshots to ~/Pictures
 defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" && killall Finder # Search current folder rather than system-wide
@@ -177,10 +175,12 @@ done
 
 # Fix Docker
 # https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
-
 sudo mkdir -p /usr/local/lib/docker
 sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins /usr/local/lib/docker/cli-plugins
-brew pyenv-sync
+
+
+
+
 
 # fix alt <char> https://apple.stackexchange.com/questions/388552/macos-how-to-turn-off-option-key-printing-special-characters-in-vs-code-intell
 wget https://gist.githubusercontent.com/greneholt/e7d5373f96cc0f815717c7666790324d/raw/af9e3094669858c1ddb3c0c8e28b43f56a120f92/QWERTY%2520no%2520option.keylayout -O ~/Library/Keyboard\ Layouts/QWERTY\ no\ option.keylayout
