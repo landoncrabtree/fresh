@@ -13,6 +13,7 @@ brew install node
 brew install git
 brew install wget
 brew install cmake
+brew install pipx
 brew install landoncrabtree/brewpy
 
 # Install npm dependencies (otherwise npm i won't work)
@@ -54,6 +55,7 @@ brew install john-jumbo
 brew install hydra
 brew install sqlmap
 brew install --cask binary-ninja
+pipx install impacket
 
 # Install monitoring tools
 brew install --cask filemonitor
@@ -66,7 +68,6 @@ git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordli
 
 # Install regularly used applications
 brew install --cask shottr
-#brew install --cask alfred
 brew install --cask rectangle
 brew install --cask firefox
 #brew install --cask visual-studio-code
@@ -76,9 +77,6 @@ brew install --cask bitwarden
 brew install --cask authy
 brew install --cask private-internet-access
 brew install --cask docker
-#brew install --cask intellij-idea
-#brew install --cask pycharm
-#brew install --cask clion
 brew install --cask discord
 brew install --cask macupdater
 brew install --cask obsidian
@@ -177,10 +175,6 @@ done
 # https://forums.docker.com/t/no-docker-compose-v2-on-macos-13-0-1/131419/9
 sudo mkdir -p /usr/local/lib/docker
 sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins /usr/local/lib/docker/cli-plugins
-
-
-
-
 
 # fix alt <char> https://apple.stackexchange.com/questions/388552/macos-how-to-turn-off-option-key-printing-special-characters-in-vs-code-intell
 wget https://gist.githubusercontent.com/greneholt/e7d5373f96cc0f815717c7666790324d/raw/af9e3094669858c1ddb3c0c8e28b43f56a120f92/QWERTY%2520no%2520option.keylayout -O ~/Library/Keyboard\ Layouts/QWERTY\ no\ option.keylayout
