@@ -70,7 +70,7 @@
     "github.copilot.enable": {
         "*": true,
     },
-    "editor.unicodeHighlight.nonBasicASCII": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8",
@@ -116,5 +116,6 @@
         "*.s3db": "${capture}.${extname}-*"
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "workbench.colorTheme": "One Dark"
 }
