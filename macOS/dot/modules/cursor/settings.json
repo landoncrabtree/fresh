@@ -117,5 +117,10 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "workbench.colorTheme": "One Dark"
+    "workbench.colorTheme": "One Dark",
+    "update.releaseTrack": "prerelease",
+    "cursor.diffs.useCharacterLevelDiffs": true,
+    "cursor.terminal.usePreviewBox": true,
+    "cursor.composer.shouldAllowCustomModes": true,
+    "cursor.composer.usageSummaryDisplay": "always"
 }
