@@ -55,7 +55,6 @@ brew install john-jumbo
 brew install hydra
 brew install sqlmap
 brew install --cask binary-ninja
-brew install pwntools
 pipx install impacket
 pipx install volatility3
 
