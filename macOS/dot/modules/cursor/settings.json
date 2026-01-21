@@ -73,7 +73,12 @@
     "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "prettier.tabWidth": 4,
     "security.workspace.trust.untrustedFiles": "open",
@@ -122,5 +127,6 @@
     "cursor.diffs.useCharacterLevelDiffs": true,
     "cursor.terminal.usePreviewBox": true,
     "cursor.composer.shouldAllowCustomModes": true,
-    "cursor.composer.usageSummaryDisplay": "always"
+    "cursor.composer.usageSummaryDisplay": "always",
+    "editor.minimap.enabled": true
 }
