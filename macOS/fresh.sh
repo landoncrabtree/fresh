@@ -8,12 +8,11 @@ sudo softwareupdate --install-rosetta
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install daily drivers
-brew install python3
+brew install python3 uv
 brew install node
 brew install git
 brew install wget
 brew install cmake
-brew install pipx && pipx ensurepath
 brew install landoncrabtree/brewpy
 
 # Install npm dependencies (otherwise npm i won't work)
@@ -55,8 +54,8 @@ brew install john-jumbo
 brew install hydra
 brew install sqlmap
 brew install --cask binary-ninja
-pipx install impacket
-pipx install volatility3
+uv tool install impacket
+uv tool install volatility3
 
 # Install monitoring tools
 brew install --cask filemonitor
