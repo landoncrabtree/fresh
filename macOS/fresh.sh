@@ -124,10 +124,8 @@ brew install ruby
 # Enable brew autoupdate
 sudo mkdir -p ~/Library/LaunchAgents
 sudo chown -R $(whoami):staff ~/Library/LaunchAgents
-brew tap homebrew/autoupdate
-brew install pinentry-mac
-brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo
-launchctl load ~/Library/LaunchAgents/com.github.domt4.homebrew-autoupdate.plist
+brew tap domt4/autoupdate
+brew autoupdate start 43200 --upgrade --cleanup --immediate --leaves-only --sudo
 
 # macOS Tweaks
 defaults write com.apple.TextEdit RichText -int 0 # Open TextEdit in plaintext mode by default
