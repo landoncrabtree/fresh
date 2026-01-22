@@ -53,6 +53,7 @@ brew install hashcat
 brew install john-jumbo
 brew install hydra
 brew install sqlmap
+brew install sleuthkit
 brew install --cask binary-ninja
 uv tool install impacket
 uv tool install volatility3
@@ -87,15 +88,13 @@ brew install --cask microsoft-powerpoint
 brew install --cask microsoft-teams
 brew install --cask microsoft-word
 brew install --cask microsoft-excel
-brew install --cask zulu
+brew install --cask temurin
 brew install --cask iina
 brew install --cask dropshelf
 #brew install --cask mac2imgur
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
-brew install --cask onedrive
-brew install --cask gyazo
 brew install --cask flux
 brew install --cask keyboard-maestro
 brew install --cask zoom
@@ -105,10 +104,11 @@ brew install --cask omnidisksweeper
 brew install --cask raycast
 brew install --cask aldente
 brew install --cask bartender
+
 brew install mysql-client
 brew install artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
 brew install fzf
-brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
+# brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 
 # dot files (https://github.com/pablopunk/dot)
 brew install pablopunk/brew/dot
