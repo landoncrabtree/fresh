@@ -13,7 +13,7 @@ brew install node
 brew install git
 brew install wget
 brew install cmake
-brew install landoncrabtree/brewpy/brewpy
+brew install landoncrabtree/tap/brewpy
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
