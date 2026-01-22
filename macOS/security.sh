@@ -17,8 +17,7 @@ uv tool install impacket
 uv tool install volatility3
 uv tool install pwntools
 
-wget https://raw.githubusercontent.com/Gallopsled/pwntools-binutils/master/macos/binutils-amd64.rb -O /tmp/binutils-amd64.rb
-HOMEBREW_DEVELOPER="true" brew install /tmp/binutils-amd64.rb
+brew install landoncrabtree/tap/binutils-x86_64
 
 # Wordlists
 sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
