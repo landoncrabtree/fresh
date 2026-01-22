@@ -81,7 +81,7 @@ brew install --cask onyx
 brew install --cask omnidisksweeper
 brew install --cask raycast
 brew install --cask aldente
-brew install --cask bartender
+brew install --cask jordanbaird-ice
 
 brew install mysql-client
 brew install artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
