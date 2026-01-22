@@ -40,32 +40,10 @@ sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions fast-syntax-highlightin
 # Add aliases
 echo "[[ -f ~/.aliases ]] && source ~/.aliases" >> ~/.zshrc
 
-# Install some security-tools
-brew install binutils
-brew install nmap
-brew install --cask burp-suite
-brew install --cask wireshark
-brew install feroxbuster
-brew install binwalk
-brew install --cask ghidra
-brew install exiftool
-brew install hashcat
-brew install john-jumbo
-brew install hydra
-brew install sqlmap
-brew install sleuthkit
-brew install --cask binary-ninja
-uv tool install impacket
-uv tool install volatility3
-
 # Install monitoring tools
 brew install --cask filemonitor
 brew install --cask processmonitor
 brew install --cask taskexplorer
-
-# Wordlists
-sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
-git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
 # Install regularly used applications
 brew install --cask shottr
