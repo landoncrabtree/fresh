@@ -16,6 +16,8 @@ brew install --cask ghidra
 uv tool install impacket
 uv tool install volatility3
 uv tool install pwntools
+uv tool install ROPgadget
+uv tool install RSACtfTool
 
 brew install landoncrabtree/tap/binutils-x86_64
 
