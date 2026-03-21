@@ -49,7 +49,6 @@ brew install --cask taskexplorer
 brew install --cask shottr
 brew install --cask rectangle
 brew install --cask firefox
-#brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask appcleaner
 brew install --cask bitwarden
@@ -61,7 +60,6 @@ brew install --cask macupdater
 brew install --cask obsidian
 brew install --cask the-unarchiver
 brew install --cask betterdisplay
-#brew install --cask microsoft-outlook
 brew install --cask microsoft-powerpoint
 brew install --cask microsoft-teams
 brew install --cask microsoft-word
@@ -69,7 +67,6 @@ brew install --cask microsoft-excel
 brew install --cask temurin
 brew install --cask iina
 brew install --cask dropshelf
-#brew install --cask mac2imgur
 brew install --cask notion
 brew install --cask readdle-spark
 brew install --cask google-drive
