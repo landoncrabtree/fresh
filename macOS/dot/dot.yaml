@@ -1,0 +1,37 @@
+profiles:
+  "*":
+    zsh:
+      link:
+        "modules/zsh/zprofile": "~/.zprofile"
+        "modules/zsh/aliases": "~/.aliases"
+
+    zellij:
+      link:
+        "modules/zellij/config.kdl": "~/.config/zellij/config.kdl"
+
+    iterm2:
+      link:
+        "modules/iterm2/Profiles.json": "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json"
+
+    linearmouse:
+      link:
+        "modules/linearmouse/linearmouse.json": "~/.config/linearmouse/linearmouse.json"
+
+    cursor:
+      link:
+        "modules/cursor/settings.json": "~/Library/Application Support/Cursor/User/settings.json"
+        "modules/cursor/keybindings.json": "~/Library/Application Support/Cursor/User/keybindings.json"
+
+    skhd:
+      link:
+        "modules/skhd/skhdrc": "~/.config/skhd/skhdrc"
+        "modules/skhd/focus.sh": "~/.config/skhd/focus.sh"
+        "modules/skhd/move.sh": "~/.config/skhd/move.sh"
+        "modules/skhd/stack.sh": "~/.config/skhd/stack.sh"
+        "modules/skhd/pause.sh": "~/.config/skhd/pause.sh"
+        "modules/skhd/resize.sh": "~/.config/skhd/resize.sh"
+
+    yabai:
+      link:
+        "modules/yabai/yabairc": "~/.config/yabai/yabairc"
+        "modules/yabai/auto.sh": "~/.config/yabai/auto.sh"

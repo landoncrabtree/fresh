@@ -1,0 +1,94 @@
+{
+    "$schema" : "https:\/\/schema.linearmouse.app\/0.11.2",
+    "schemes" : [
+      {
+        "if" : {
+          "device" : {
+            "category" : "mouse",
+            "productID" : "0xb023",
+            "productName" : "MX Master 3",
+            "serialNumber" : "73BD55F6F023CD67",
+            "vendorID" : "0x46d"
+          }
+        },
+        "pointer" : {
+          "acceleration" : 0.25,
+          "disableAcceleration" : false,
+          "speed" : 0.2
+        },
+        "scrolling" : {
+          "acceleration" : {
+            "vertical" : 1
+          },
+          "distance" : {
+            "vertical" : "auto"
+          },
+          "reverse" : {
+            "vertical" : false
+          },
+          "speed" : {
+            "vertical" : 0
+          }
+        }
+      },
+      {
+        "if" : {
+          "device" : {
+            "category" : "mouse",
+            "productID" : "0xb023",
+            "productName" : "MX Master 3",
+            "serialNumber" : "73BD55F6F023CD67",
+            "vendorID" : "0x46d"
+          },
+          "parentApp" : "com.codeweavers.CrossOver"
+        },
+        "pointer" : {
+          "acceleration" : 1,
+          "disableAcceleration" : true
+        }
+      },
+      {
+        "if" : {
+          "device" : {
+            "category" : "mouse",
+            "productID" : "0xb023",
+            "productName" : "MX Master 3",
+            "serialNumber" : "73BD55F6F023CD67",
+            "vendorID" : "0x46d"
+          },
+          "parentApp" : "com.moonsworth.client"
+        },
+        "pointer" : {
+          "acceleration" : 1,
+          "disableAcceleration" : true
+        }
+      },
+      {
+        "buttons" : {
+          "mappings" : [
+            {
+              "action" : "missionControl",
+              "button" : 5,
+              "command" : false,
+              "control" : false,
+              "option" : false,
+              "shift" : false
+            }
+          ]
+        },
+        "if" : {
+          "device" : {
+            "category" : "mouse",
+            "productID" : "0xc548",
+            "productName" : "USB Receiver",
+            "vendorID" : "0x46d"
+          }
+        },
+        "pointer" : {
+          "acceleration" : 0.15,
+          "disableAcceleration" : false,
+          "speed" : 0.25
+        }
+      }
+    ]
+  }

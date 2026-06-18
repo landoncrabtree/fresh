@@ -128,5 +128,7 @@
     "cursor.terminal.usePreviewBox": true,
     "cursor.composer.shouldAllowCustomModes": true,
     "cursor.composer.usageSummaryDisplay": "always",
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "window.commandCenter": true,
+    "cursor.composer.shouldChimeAfterChatFinishes": true
 }
