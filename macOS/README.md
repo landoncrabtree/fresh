@@ -33,6 +33,5 @@ Swipe Right
 
 ### Battery / Sleep (Macbooks, primarily)
 
-- `sudo pmset disableassertion InternalPreventSleep`
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=1821102>
 - All typical sleep settings & disable notifications on sleep (SleepAid to diagnose).
