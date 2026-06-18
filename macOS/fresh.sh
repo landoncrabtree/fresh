@@ -29,14 +29,6 @@ sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions fast-syntax-highlightin
 # Add aliases
 echo "[[ -f ~/.aliases ]] && source ~/.aliases" >> ~/.zshrc
 
-# Install uv tools
-uv tool install impacket
-uv tool install volatility3
-
-# Wordlists
-sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
-git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
-
 # dot files (https://github.com/pablopunk/dot)
 cd dot
 dot

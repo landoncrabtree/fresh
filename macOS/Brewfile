@@ -18,21 +18,6 @@ brew "pango"
 # Shell / fonts
 cask "font-meslo-lg-nerd-font"
 
-# Security tools
-brew "binutils"
-brew "nmap"
-brew "feroxbuster"
-brew "binwalk"
-brew "exiftool"
-brew "hashcat"
-brew "john-jumbo"
-brew "hydra"
-brew "sqlmap"
-cask "burp-suite"
-cask "wireshark"
-cask "ghidra"
-cask "binary-ninja"
-
 # Monitoring tools
 cask "filemonitor"
 cask "processmonitor"
@@ -47,7 +32,7 @@ brew "ruby"
 # CLI tools
 brew "mysql-client"
 brew "fzf"
-brew "displayplacer" # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
+# brew "displayplacer" # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 brew "artginzburg/tap/sudo-touchid", trusted: true
 brew "pablopunk/brew/dot", trusted: true
 
@@ -72,15 +57,13 @@ cask "microsoft-powerpoint"
 cask "microsoft-teams"
 cask "microsoft-word"
 cask "microsoft-excel"
-cask "zulu"
+cask "temurin"
 cask "iina"
 cask "dropshelf"
 # cask "mac2imgur"
 cask "notion"
 cask "readdle-spark"
 cask "google-drive"
-cask "onedrive"
-cask "gyazo"
 cask "flux"
 cask "keyboard-maestro"
 cask "zoom"
@@ -89,4 +72,4 @@ cask "onyx"
 cask "omnidisksweeper"
 cask "raycast"
 cask "aldente"
-cask "bartender"
+cask "jordanbaird-ice"
