@@ -13,7 +13,7 @@ brew install node
 brew install git
 brew install wget
 brew install cmake
-brew install landoncrabtree/brewpy
+brew install landoncrabtree/tap/brewpy && brew trust landoncrabtree/brewpy
 
 # Install npm dependencies (otherwise npm i won't work)
 brew install cairo
@@ -106,12 +106,12 @@ brew install --cask raycast
 brew install --cask aldente
 brew install --cask bartender
 brew install mysql-client
-brew install artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
+brew install artginzburg/tap/sudo-touchid && brew trust artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
 brew install fzf
 brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
 
 # dot files (https://github.com/pablopunk/dot)
-brew install pablopunk/brew/dot
+brew install pablopunk/brew/dot && brew trust pablopunk/brew/dot
 cd dot
 dot
 
@@ -124,7 +124,7 @@ brew install ruby
 # Enable brew autoupdate
 sudo mkdir -p ~/Library/LaunchAgents
 sudo chown -R $(whoami):staff ~/Library/LaunchAgents
-brew tap domt4/autoupdate
+brew tap domt4/autoupdate && brew trust domt4/autoupdate
 brew autoupdate start 43200 --upgrade --cleanup --immediate --leaves-only --sudo
 
 # macOS Tweaks
