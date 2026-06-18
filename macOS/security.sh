@@ -1,19 +1,5 @@
 # Install security tools
-brew install binutils
-brew install nmap
-brew install feroxbuster
-brew install binwalk
-brew install exiftool
-brew install hashcat
-brew install john-jumbo
-brew install hydra
-brew install sqlmap
-brew install sleuthkit
-brew install --cask binary-ninja
-brew install --cask burp-suite
-brew install --cask wireshark
-brew install --cask ghidra
-brew install landoncrabtree/tap/binutils-x86_64
+brew bundle --file Brewfile.security
 
 uv tool install impacket
 uv tool install volatility3

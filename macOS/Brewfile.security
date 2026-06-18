@@ -1,0 +1,18 @@
+# Third-party taps
+brew "landoncrabtree/tap/binutils-x86_64", trusted: true
+
+# Security tools
+brew "binutils"
+brew "nmap"
+brew "feroxbuster"
+brew "binwalk"
+brew "exiftool"
+brew "hashcat"
+brew "john-jumbo"
+brew "hydra"
+brew "sqlmap"
+brew "sleuthkit"
+cask "binary-ninja"
+cask "burp-suite"
+cask "wireshark"
+cask "ghidra"
