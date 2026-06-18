@@ -7,17 +7,8 @@ sudo softwareupdate --install-rosetta
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install daily drivers
-brew install python3 uv
-brew install node
-brew install git
-brew install wget
-brew install cmake
-brew install landoncrabtree/tap/brewpy && brew trust landoncrabtree/brewpy
-
-# Install npm dependencies (otherwise npm i won't work)
-brew install cairo
-brew install pango
+# Install all packages
+brew bundle
 
 # Install OhMyZsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -27,8 +18,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git $ZSH_CUSTOM/plugins/fast-syntax-highlighting
 #git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
-
-brew install --cask font-meslo-lg-nerd-font
 
 # Install Powerlevel10k Theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM}/themes/powerlevel10k
@@ -40,91 +29,24 @@ sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions fast-syntax-highlightin
 # Add aliases
 echo "[[ -f ~/.aliases ]] && source ~/.aliases" >> ~/.zshrc
 
-# Install some security-tools
-brew install binutils
-brew install nmap
-brew install --cask burp-suite
-brew install --cask wireshark
-brew install feroxbuster
-brew install binwalk
-brew install --cask ghidra
-brew install exiftool
-brew install hashcat
-brew install john-jumbo
-brew install hydra
-brew install sqlmap
-brew install --cask binary-ninja
+# Install uv tools
 uv tool install impacket
 uv tool install volatility3
-
-# Install monitoring tools
-brew install --cask filemonitor
-brew install --cask processmonitor
-brew install --cask taskexplorer
 
 # Wordlists
 sudo mkdir -p /usr/local/share/wordlists && sudo chown -R $(whoami):staff /usr/local/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git /usr/local/share/wordlists/SecLists
 
-# Install regularly used applications
-brew install --cask shottr
-brew install --cask rectangle
-brew install --cask firefox
-#brew install --cask visual-studio-code
-brew install --cask cursor
-brew install --cask appcleaner
-brew install --cask bitwarden
-brew install --cask authy
-brew install --cask private-internet-access
-brew install --cask docker
-brew install --cask discord
-brew install --cask macupdater
-brew install --cask obsidian
-brew install --cask the-unarchiver
-brew install --cask betterdisplay
-#brew install --cask microsoft-outlook
-brew install --cask microsoft-powerpoint
-brew install --cask microsoft-teams
-brew install --cask microsoft-word
-brew install --cask microsoft-excel
-brew install --cask zulu
-brew install --cask iina
-brew install --cask dropshelf
-#brew install --cask mac2imgur
-brew install --cask notion
-brew install --cask readdle-spark
-brew install --cask google-drive
-brew install --cask onedrive
-brew install --cask gyazo
-brew install --cask flux
-brew install --cask keyboard-maestro
-brew install --cask zoom
-brew install --cask iterm2
-brew install --cask onyx
-brew install --cask omnidisksweeper
-brew install --cask raycast
-brew install --cask aldente
-brew install --cask bartender
-brew install mysql-client
-brew install artginzburg/tap/sudo-touchid && brew trust artginzburg/tap/sudo-touchid && sudo brew services start sudo-touchid
-brew install fzf
-brew install displayplacer # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
-
 # dot files (https://github.com/pablopunk/dot)
-brew install pablopunk/brew/dot && brew trust pablopunk/brew/dot
 cd dot
 dot
 
-# Install other development languages
-brew install go
-brew install rust
-brew install powershell
-brew install ruby
+# Enable sudo-touchid
+sudo brew services start sudo-touchid
 
 # Enable brew autoupdate
 sudo mkdir -p ~/Library/LaunchAgents
 sudo chown -R $(whoami):staff ~/Library/LaunchAgents
-brew tap domt4/autoupdate && brew trust domt4/autoupdate
 brew autoupdate start 43200 --upgrade --cleanup --immediate --leaves-only --sudo
 
 # macOS Tweaks
@@ -179,4 +101,3 @@ wget https://gist.githubusercontent.com/greneholt/e7d5373f96cc0f815717c766679032
 echo "keyboard layout downloaded, change via settings"
 
 echo "DONE! Enjoy."
-

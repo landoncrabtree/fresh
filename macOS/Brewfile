@@ -1,0 +1,92 @@
+# Third-party taps
+# domt4/autoupdate provides an external command (not a formula), so we trust the tap
+tap "domt4/autoupdate", trusted: true
+
+# Daily drivers
+brew "python3"
+brew "uv"
+brew "node"
+brew "git"
+brew "wget"
+brew "cmake"
+brew "landoncrabtree/tap/brewpy", trusted: true
+
+# npm build dependencies (required for npm install to work)
+brew "cairo"
+brew "pango"
+
+# Shell / fonts
+cask "font-meslo-lg-nerd-font"
+
+# Security tools
+brew "binutils"
+brew "nmap"
+brew "feroxbuster"
+brew "binwalk"
+brew "exiftool"
+brew "hashcat"
+brew "john-jumbo"
+brew "hydra"
+brew "sqlmap"
+cask "burp-suite"
+cask "wireshark"
+cask "ghidra"
+cask "binary-ninja"
+
+# Monitoring tools
+cask "filemonitor"
+cask "processmonitor"
+cask "taskexplorer"
+
+# Development languages
+brew "go"
+brew "rust"
+brew "powershell"
+brew "ruby"
+
+# CLI tools
+brew "mysql-client"
+brew "fzf"
+brew "displayplacer" # https://www.reddit.com/r/mac/comments/11evhk0/how_to_stop_my_extended_displays_from_swapping/
+brew "artginzburg/tap/sudo-touchid", trusted: true
+brew "pablopunk/brew/dot", trusted: true
+
+# Applications
+cask "shottr"
+cask "rectangle"
+cask "firefox"
+# cask "visual-studio-code"
+cask "cursor"
+cask "appcleaner"
+cask "bitwarden"
+cask "authy"
+cask "private-internet-access"
+cask "docker"
+cask "discord"
+cask "macupdater"
+cask "obsidian"
+cask "the-unarchiver"
+cask "betterdisplay"
+# cask "microsoft-outlook"
+cask "microsoft-powerpoint"
+cask "microsoft-teams"
+cask "microsoft-word"
+cask "microsoft-excel"
+cask "zulu"
+cask "iina"
+cask "dropshelf"
+# cask "mac2imgur"
+cask "notion"
+cask "readdle-spark"
+cask "google-drive"
+cask "onedrive"
+cask "gyazo"
+cask "flux"
+cask "keyboard-maestro"
+cask "zoom"
+cask "iterm2"
+cask "onyx"
+cask "omnidisksweeper"
+cask "raycast"
+cask "aldente"
+cask "bartender"
